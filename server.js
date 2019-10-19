@@ -12,7 +12,7 @@ app.use(express.static("public"));
 
 // Routes
 require("./routing/apiRoutes")(app);
-// require("./routing/htmlRoutes")(app);
+require("./routing/htmlRoutes")(app);
 
 // Starting the server, syncing our models ------------------------------------/
   app.listen(PORT, function() {
